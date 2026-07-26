@@ -2,50 +2,42 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
-
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #080808;
+    font-family: "Inter", Arial, sans-serif;
+    background: #050505;
     color: white;
-    text-align: center;
-
+    line-height: 1.6;
 }
 
 
+/* NAVBAR */
 
 nav {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 50px;
+    padding: 20px 60px;
 
-    background: #111;
+    background: rgba(10,10,10,0.8);
+
+    backdrop-filter: blur(10px);
 
     position: sticky;
     top: 0;
 
-    z-index: 10;
-
+    z-index: 100;
 }
-
 
 
 nav h2 {
-
-    margin: 0;
-    letter-spacing: 2px;
-
+    letter-spacing: 3px;
 }
-
 
 
 nav a {
@@ -53,29 +45,42 @@ nav a {
     color: white;
     text-decoration: none;
 
-    margin: 0 15px;
+    margin-left: 25px;
 
-    font-size: 16px;
+    opacity: 0.8;
 
 }
-
 
 
 nav a:hover {
 
-    color: #aaa;
+    opacity: 1;
+    color: #d4af37;
 
 }
 
 
 
+/* HERO */
 
 
 header {
 
-    padding: 120px 20px;
+    min-height: 90vh;
 
-    background: linear-gradient(135deg, #111, #333);
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    background:
+
+    radial-gradient(circle at top, #333, #050505 60%);
+
 
 }
 
@@ -83,41 +88,47 @@ header {
 
 .logo {
 
-    width: 100px;
-    height: 100px;
-
-    margin: auto;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
+    width: 120px;
+    height: 120px;
 
 
-    background: white;
+    display:flex;
 
-    color: black;
+    justify-content:center;
 
-    font-size: 45px;
-
-    font-weight: bold;
+    align-items:center;
 
 
-    border-radius: 25px;
+    background:
+
+    linear-gradient(135deg,#ffffff,#d4af37);
 
 
-    animation: pulse 2s infinite;
+    color:black;
+
+
+    font-size:50px;
+
+    font-weight:bold;
+
+
+    border-radius:30px;
+
+
+    box-shadow:
+
+    0 0 40px rgba(212,175,55,0.4);
+
 
 }
 
 
 
-
 header h1 {
 
-    font-size: 60px;
+    font-size:70px;
 
-    margin-bottom: 10px;
+    letter-spacing:5px;
 
 }
 
@@ -125,7 +136,9 @@ header h1 {
 
 header h2 {
 
-    font-size: 30px;
+    font-size:30px;
+
+    color:#d4af37;
 
 }
 
@@ -133,13 +146,11 @@ header h2 {
 
 header p {
 
-    max-width: 650px;
+    max-width:700px;
 
-    margin: 20px auto;
+    font-size:20px;
 
-    font-size: 20px;
-
-    line-height: 1.6;
+    opacity:0.8;
 
 }
 
@@ -149,24 +160,27 @@ header p {
 
 .button {
 
-    display: inline-block;
+    margin-top:30px;
 
-    margin-top: 25px;
-
-    padding: 15px 35px;
+    padding:16px 40px;
 
 
-    background: white;
+    background:#d4af37;
 
-    color: black;
-
-
-    border-radius: 10px;
+    color:black;
 
 
-    text-decoration: none;
+    text-decoration:none;
 
-    font-weight: bold;
+
+    border-radius:50px;
+
+
+    font-weight:bold;
+
+
+    transition:.3s;
+
 
 }
 
@@ -174,65 +188,74 @@ header p {
 
 .button:hover {
 
-    transform: scale(1.05);
+    transform:translateY(-5px);
 
-    transition: 0.3s;
+    box-shadow:
+
+    0 10px 30px rgba(212,175,55,.4);
 
 }
 
 
 
+
+/* SECTIONS */
 
 
 section {
 
-    padding: 70px 20px;
+    padding:100px 20px;
 
 }
-
 
 
 section h2 {
 
-    font-size: 38px;
-
-    margin-bottom: 40px;
+    font-size:45px;
 
 }
 
 
 
+/* CARDS */
 
 
 .cards {
 
-    display: flex;
+    display:flex;
 
-    justify-content: center;
+    justify-content:center;
 
-    gap: 25px;
+    gap:30px;
 
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 
 }
-
-
 
 
 
 .card {
 
-    background: #161616;
 
-    width: 280px;
+    background:
 
-    padding: 30px;
-
-
-    border-radius: 20px;
+    linear-gradient(145deg,#151515,#090909);
 
 
-    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+    border:1px solid #222;
+
+
+    padding:35px;
+
+
+    width:300px;
+
+
+    border-radius:25px;
+
+
+    transition:.3s;
+
 
 }
 
@@ -240,109 +263,95 @@ section h2 {
 
 .card:hover {
 
-    transform: translateY(-10px);
 
-    transition: 0.3s;
+    transform:translateY(-10px);
+
+
+    border-color:#d4af37;
+
 
 }
 
 
 
+
+.card h3 {
+
+    color:#d4af37;
+
+}
+
+
+
+
+
+/* FORM */
 
 
 .contact-form {
 
-    max-width: 500px;
+    max-width:600px;
 
-    margin: auto;
+    margin:auto;
 
 
-    display: flex;
+    display:flex;
 
-    flex-direction: column;
+    flex-direction:column;
 
-    gap: 15px;
+    gap:20px;
+
 
 }
-
-
-
 
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
 
 
-    padding: 15px;
+    background:#111;
 
 
-    border-radius: 10px;
+    color:white;
 
 
-    border: none;
+    border:1px solid #333;
 
 
-    background: #171717;
+    padding:16px;
 
 
-    color: white;
-
-
-    font-size: 16px;
+    border-radius:15px;
 
 
 }
-
-
-
-.contact-form textarea {
-
-    height: 130px;
-
-    resize: none;
-
-}
-
-
 
 
 
 .contact-form button {
 
 
-    padding: 15px;
+    background:#d4af37;
 
 
-    border: none;
+    color:black;
 
 
-    border-radius: 10px;
+    padding:16px;
 
 
-    background: white;
+    border:none;
 
 
-    color: black;
+    border-radius:15px;
 
 
-    font-size: 18px;
+    font-weight:bold;
 
 
-    font-weight: bold;
+    cursor:pointer;
 
-
-    cursor: pointer;
-
-
-}
-
-
-
-.contact-form button:hover {
-
-    transform: scale(1.05);
-
-    transition: 0.3s;
 
 }
 
@@ -352,39 +361,25 @@ section h2 {
 
 footer {
 
-    padding: 30px;
 
-    background: #111;
+    background:#090909;
+
+
+    padding:50px;
+
+
+    border-top:1px solid #222;
+
 
 }
 
 
 
+footer a {
 
+    color:#d4af37;
 
-@keyframes pulse {
-
-
-    0% {
-
-        transform: scale(1);
-
-    }
-
-
-    50% {
-
-        transform: scale(1.08);
-
-    }
-
-
-    100% {
-
-        transform: scale(1);
-
-    }
-
+    text-decoration:none;
 
 }
 
@@ -395,64 +390,18 @@ footer {
 @media(max-width:700px){
 
 
-    nav {
+nav {
 
-        flex-direction: column;
-
-        gap: 15px;
-
-    }
-
-
-    nav a {
-
-        display: inline-block;
-
-        margin: 8px;
-
-    }
-
-
-    header h1 {
-
-        font-size: 40px;
-
-    }
-
-
-    header h2 {
-
-        font-size: 22px;
-
-    }
-
-
-}
-.contact-form select {
-
-    padding:15px;
-
-    border-radius:10px;
-
-    border:none;
-
-    background:#171717;
-
-    color:white;
-
-    font-size:16px;
-
-}
-footer a {
-
-    color: white;
-    text-decoration: none;
+    flex-direction:column;
 
 }
 
 
-footer a:hover {
+header h1 {
 
-    text-decoration: underline;
+    font-size:40px;
+
+}
+
 
 }
