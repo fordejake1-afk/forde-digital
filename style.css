@@ -916,3 +916,97 @@ header h2 {
     color:black;
 
 }
+/* LEGAL PAGES */
+
+.legal-page {
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+
+.legal-page h1 {
+
+    font-size:60px;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+
+.legal-date {
+
+    text-align:center;
+
+    opacity:.6;
+
+    margin-bottom:50px;
+
+}
+
+
+.legal-box {
+
+    background:
+
+    linear-gradient(145deg,#151515,#090909);
+
+    border:1px solid #222;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
+
+}
+
+
+.legal-box h2 {
+
+    color:#d4af37;
+
+    margin-top:45px;
+
+}
+
+
+.legal-box p,
+.legal-box li {
+
+    color:#ddd;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+
+.legal-box ul {
+
+    padding-left:25px;
+
+}
+
+
+@media(max-width:700px){
+
+.legal-page h1 {
+
+font-size:40px;
+
+}
+
+
+.legal-box {
+
+padding:25px;
+
+}
+
+}
