@@ -428,3 +428,18 @@ footer {
 
 
 }
+.contact-form select {
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:none;
+
+    background:#171717;
+
+    color:white;
+
+    font-size:16px;
+
+}
