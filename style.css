@@ -428,3 +428,19 @@ section {
     transform:translateY(0);
 
 }
+#stats .card h2 {
+
+    font-size:45px;
+
+    color:#d4af37;
+
+    margin:10px;
+
+}
+
+
+#stats {
+
+    background:#080808;
+
+}
