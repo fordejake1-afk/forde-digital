@@ -536,3 +536,31 @@ header {
     color:#ddd;
 
 }
+/* About Section */
+
+.about-box {
+
+    max-width:800px;
+
+    margin:auto;
+
+    background:
+
+    linear-gradient(145deg,#151515,#090909);
+
+    padding:40px;
+
+    border-radius:25px;
+
+    border:1px solid #222;
+
+    font-size:18px;
+
+}
+
+
+.about-box p {
+
+    margin-bottom:25px;
+
+}
