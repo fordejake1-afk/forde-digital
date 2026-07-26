@@ -591,3 +591,14 @@ header {
     transform:scale(1.08) translateY(-10px);
 
 }
+/* Testimonials */
+
+#testimonials > p {
+
+    opacity:0.7;
+
+    font-size:18px;
+
+    margin-bottom:40px;
+
+}
