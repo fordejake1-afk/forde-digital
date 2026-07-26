@@ -1123,3 +1123,193 @@ transform:translateY(-3px);
 box-shadow:0 10px 30px rgba(212,175,55,.4);
 
 }
+/* =========================
+   MOBILE IMPROVEMENTS
+========================= */
+
+
+@media (max-width:700px) {
+
+
+/* NAVBAR */
+
+nav {
+
+    padding:15px 20px;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+.brand h2 {
+
+    font-size:18px;
+
+}
+
+
+.brand img {
+
+    width:40px;
+
+    height:40px;
+
+}
+
+
+.nav-links {
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+
+.nav-links a {
+
+    font-size:14px;
+
+}
+
+
+
+/* HERO */
+
+header h1 {
+
+    font-size:42px;
+
+    line-height:1.1;
+
+}
+
+
+header h2 {
+
+    font-size:18px;
+
+}
+
+
+.hero-logo {
+
+    width:100px;
+
+    height:100px;
+
+}
+
+
+
+/* BUTTONS */
+
+.hero-buttons {
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+.button,
+.secondary-button {
+
+    width:80%;
+
+    text-align:center;
+
+}
+
+
+
+/* SECTIONS */
+
+section {
+
+    padding:60px 20px;
+
+}
+
+
+section h2 {
+
+    font-size:32px;
+
+}
+
+
+
+/* CARDS */
+
+.cards {
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+
+.card {
+
+    padding:25px;
+
+}
+
+
+
+/* PRICING */
+
+.card h2 {
+
+    font-size:28px;
+
+}
+
+
+
+/* CONTACT FORM */
+
+.contact-form {
+
+    width:100%;
+
+}
+
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select,
+.contact-form button {
+
+    width:100%;
+
+}
+
+
+
+/* LEGAL PAGES */
+
+.legal-box {
+
+    padding:20px;
+
+}
+
+
+.legal-page h1 {
+
+    font-size:38px;
+
+}
+
+
+
+}
