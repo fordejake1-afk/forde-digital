@@ -444,3 +444,79 @@ section {
     background:#080808;
 
 }
+/* Premium Hero */
+
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero-glow {
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    background:#d4af37;
+
+    opacity:0.12;
+
+    filter:blur(120px);
+
+    top:-200px;
+
+    border-radius:50%;
+
+}
+
+
+
+.hero-buttons {
+
+    display:flex;
+
+    gap:20px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.secondary {
+
+    background:transparent;
+
+    color:white;
+
+    border:1px solid #d4af37;
+
+}
+
+
+.secondary:hover {
+
+    background:#d4af37;
+
+    color:black;
+
+}
+
+
+
+.trusted {
+
+    margin-top:50px;
+
+    opacity:0.6;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+}
