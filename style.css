@@ -710,3 +710,40 @@ header > *:not(.background-effects) {
     z-index:1;
 
 }
+/* NAVBAR BRAND */
+
+.brand {
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+
+.brand img {
+
+    width:45px;
+    height:45px;
+
+    border-radius:12px;
+
+}
+
+
+.brand h2 {
+
+    margin:0;
+    letter-spacing:3px;
+
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+
+    display:flex;
+    align-items:center;
+
+}
